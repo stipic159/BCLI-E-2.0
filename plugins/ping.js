@@ -2,7 +2,7 @@ module.exports = {
     pattern: 'ping',
     alias: ['пинг'],
     desc: 'Проверка скорости работы бота',
-    category: ['🏠 Базовые команды'],
+    category: ['базовые команды'],
     async execute(Void, citel) {
         let initial = new Date().getTime();
         const { key } = await Void.sendMessage(citel.chat, { text: '_*Пинг*_' }, { quoted: citel });
